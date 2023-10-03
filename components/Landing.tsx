@@ -13,7 +13,7 @@ function Landing() {
   }, []);
 
   return (
-    <div className="flex flex-col my-[200px] mx-[60px]">
+    <div className="flex flex-col text-left">
       {loading ? (
         <>
           <div>
@@ -29,35 +29,25 @@ function Landing() {
         </>
       ) : (
         <>
-          <h1 className="text-8xl orange font-bold">I'm Vuong.</h1>
-          <h2 className="text-2xl font-bold mt-2">
-            Frontend Developer / Frontend Software Engineer
+          <h1 className="text-4xl orange font-bold mb-3">Hi! My name is</h1>
+          <h1 className="text-8xl orange font-bold mb-6">Vuong Tran</h1>
+          <h2 className="text-2xl font-bold mb-6 text-white">
+            Frontend Software Engineer
           </h2>
-          <div className="w-[50%]">
-            <p className="text-lg">
-              I'm a <span className="orange">Frontend Developer</span> Frontend
-              Developer with a strong passion for building web applications with
-              great user experiences.
-            </p>
-            <p>
-              Here's a bit more <span className="orange">about me.</span>
+          <div>
+            <p className="text-lg text-white">
+              Driven, independent, life-long learner and <span className="orange">love</span> problem solving.
             </p>
           </div>
-          <div>
-            <a
-              href="https://www.linkedin.com/in/vuong-tran-ca"
-              target="_blank"
-            >
+          <div className="flex space-x-3 text-white">
+            <a href="https://www.linkedin.com/in/vuong-tran-ca" target="_blank">
               LinkedIn
             </a>
-            <a
-              href="https://github.com/Vtrandev"
-              target="_blank"
-            >
+            <a href="https://github.com/Vtrandev" target="_blank">
               GitHub
             </a>
             <a
-              href="./assets/Resume.pdf"
+              href="https://drive.google.com/file/d/173WDjRDoyn_ahqr383_wVCrgsi2Wxm3H/view"
               target="_blank"
             >
               Resume
