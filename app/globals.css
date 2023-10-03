@@ -2,6 +2,18 @@
 @tailwind components;
 @tailwind utilities;
 
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.background {
+  background: url("../public/assets/Bgtile.png");
+  background-repeat: repeat;
+  opacity: 40%;
+}
+
 .dark-theme {
   @apply text-white bg-black
 }

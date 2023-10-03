@@ -1,12 +1,14 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
+import LogoImg from "../public/Logo.png";
 
 function Navbar() {
   return (
-    <div className="flex items-center justify-between h-[80px] mx-[20px]">
+    <div className="flex items-center justify-between h-[80px] mx-[20px] text-white">
       <figure>
-        <Image src={"/Logo.png"} width={60} height={30} alt="logo" />
+        <Image src={LogoImg} width={60} height={30} alt="logo"
+        className="invert" />
       </figure>
 
       <ul className="flex">
