@@ -1,40 +1,31 @@
-"use client"
-import React from "react";
+"use client";
+import React, { useEffect, useState } from "react";
 
 const Background = () => {
+  const [location, setLocation] = useState<{ x: any; y: any }>({
+    x: 0,
+    y: 0,
+  });
 
-    const [isCardMoving, setIsCardMoving] = React.useState(false);
+  useEffect(() => {
+    const mouseMove = (event: MouseEvent) => {
+      setLocation({ x: event.clientX - 125, y: event.clientY - 125 });
+    };
 
-    React.useEffect(() => {
-        if (isCardMoving) window.addEventListener("mousemove", handleCardMove);
-        return () => window.removeEventListener("mousemove", handleCardMove);
-    }, [isCardMoving]);
-  
-    const handleCardMove = (event : any) => console.log({ x: event.offsetX, y: event.offsetY });
-
-    
-  // const circle = document.getElementsByClassName("home-hero-glow");
-
-  // const onMouseMove = (e) => {
-  //   // Calculate the center coordinates of the circle
-  //   let centerX = e.pageX - circle?.offsetWidth / 2;
-  //   let centerY = e.pageY - circle?.offsetHeight / 2;
-
-  //   // circle?.style.left = centerX + "px";
-  //   // circle?.style.top = centerY + "px";
-  // };
-
-  // document.addEventListener("mousemove", onMouseMove);
+    window.addEventListener("mousemove", mouseMove);
+    return () => window.removeEventListener("mousemove", mouseMove);
+  }, []);
 
   return (
-    <>
+    <div>
       <div
-        className="-z-30 absolute w-[300px] h-[300px] top-[80px] left-[300px] bg-white rounded-full
-      opacity-5 blur-3xl"
+        style={{ top: location.y, left: location.x }}
+        className={`-z-30 fixed w-[250px] h-[250px] circle bg-white rounded-full
+      opacity-5 blur-3xl`}
       ></div>
-        <div className="-z-40 fixed top-0 left-0 w-full h-full bg-[#131313]"></div>
+      <div className="-z-40 fixed top-0 left-0 w-full h-full bg-[#131313]"></div>
       <div className="fixed top-0 left-0 w-full h-full background -z-20"></div>
-    </>
+    </div>
   );
 };
 
