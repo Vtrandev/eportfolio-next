@@ -2,7 +2,7 @@
 import React, { useEffect, useState } from "react";
 
 const Background = () => {
-  const [location, setLocation] = useState<{ x: any; y: any }>({
+  const [location, setLocation] = useState<{ x: number; y: number }>({
     x: 0,
     y: 0,
   });
