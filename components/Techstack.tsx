@@ -1,4 +1,10 @@
-import React from "react";
+"use client";
+
+import React, { useEffect, useState } from "react";
+
+interface dataStack {
+  id: number; language: string;
+}
 
 function Techstack() {
   function TechTiles({ image }: { image: string }) {
@@ -8,18 +14,26 @@ function Techstack() {
       </div>
     );
   }
+
+  const [techStack, setTechStack] = useState<any>([]);
+
+  useEffect(() => {
+    const callAPI = async () => {
+      const res: any = await fetch("/api/tech");
+      const { data }: any = await res.json();
+      setTechStack(data);
+    };
+
+    callAPI();
+  }, []);
+
   return (
-    <div>
+    <div id="techstack">
       <h1 className="text-5xl">My Tech Stack</h1>
-      <div className="grid grid-cols-4 xl:grid-cols-8 gap-4">
-        <TechTiles image="HTML" />
-        <TechTiles image="CSS" />
-        <TechTiles image="JavaScript" />
-        <TechTiles image="TypeScript" />
-        <TechTiles image="React" />
-        <TechTiles image="Next" />
-        <TechTiles image="Firebase" />
-        <TechTiles image="Redux" />
+      <div className="grid grid-cols-2 md:grid-cols-4 xl:grid-cols-8 gap-4">
+        {techStack.map((tech: any) => (
+          <TechTiles key={tech.id} image={tech.language} />
+        ))}
       </div>
     </div>
   );
