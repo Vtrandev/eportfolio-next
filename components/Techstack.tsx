@@ -44,10 +44,19 @@ function Techstack() {
   }, []);
 
   return (
-    <div id="techstack" className="h-[80vh] flex flex-col justify-center outline">
-      <h1 className="text-5xl mb-10 font-semibold">
+    <div
+      id="techstack"
+      className="md:h-[700px] flex flex-col justify-center outline"
+    >
+      <h2 className="text-5xl mb-10 font-semibold">
         My Tech <span className="orange">Stack</span>
-      </h1>
+      </h2>
+      <p className="w-[100%] md:w-[70%] font-semibold mb-5">
+        My main area of expertise is front end development (client side of the web) but also have backend experience.
+        <br />
+        <br />
+        HTML, CSS, & JS, building small and medium web applications with React or Next, custom plugins, features, animations, and coding responsive and interactive layouts.
+      </p>
       <div className="grid grid-cols-2 md:grid-cols-4 xl:grid-cols-8 gap-8 xl:gap-4">
         {techStack.map((tech: any) => (
           <TechTiles key={tech.id} language={tech.language} src={tech.src} />
