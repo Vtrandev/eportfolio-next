@@ -3,14 +3,30 @@
 import React, { useEffect, useState } from "react";
 
 interface dataStack {
-  id: number; language: string;
+  key: number;
+  language: string;
+  src: string;
 }
 
 function Techstack() {
-  function TechTiles({ image }: { image: string }) {
+  function TechTiles({ language, src }: dataStack) {
     return (
-      <div className="border-2 border-white border-solid h-[100px] flex justify-center items-center">
-        {image}
+      <div className="relative border-2 border-white border-solid h-[100px] flex justify-center items-center group">
+        <img
+          src={src}
+          alt={`${language}`}
+          className="h-full duration-300 group-hover:scale-75
+        group-hover:brightness-75"
+        />
+        <p
+          className="absolute -bottom-8
+          scale-0
+          duration-300
+          group-hover:scale-100
+          "
+        >
+          {language}
+        </p>
       </div>
     );
   }
@@ -28,11 +44,13 @@ function Techstack() {
   }, []);
 
   return (
-    <div id="techstack">
-      <h1 className="text-5xl">My Tech Stack</h1>
-      <div className="grid grid-cols-2 md:grid-cols-4 xl:grid-cols-8 gap-4">
+    <div id="techstack" className="h-[80vh] flex flex-col justify-center outline">
+      <h1 className="text-5xl mb-10 font-semibold">
+        My Tech <span className="orange">Stack</span>
+      </h1>
+      <div className="grid grid-cols-2 md:grid-cols-4 xl:grid-cols-8 gap-8 xl:gap-4">
         {techStack.map((tech: any) => (
-          <TechTiles key={tech.id} image={tech.language} />
+          <TechTiles key={tech.id} language={tech.language} src={tech.src} />
         ))}
       </div>
     </div>

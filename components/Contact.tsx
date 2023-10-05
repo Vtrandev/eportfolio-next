@@ -16,7 +16,7 @@ function Form() {
 
 function Contact() {
   return (
-    <div id="contact">
+    <div id="contact" className="outline">
       <h2 className="text-3xl">Let's have a chat</h2>
       <p className="text-xl">I am currently open to new opportunities</p>
       <Form />

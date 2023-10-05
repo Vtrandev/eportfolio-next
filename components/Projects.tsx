@@ -23,8 +23,9 @@ function Projects() {
   }, []);
 
   return (
-    <div id="projects">
-      <h1 className="text-5xl">My Projects</h1>
+    <div id="projects"
+    className="outline">
+      <h1 className="text-5xl mt-10">My Projects</h1>
       <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
         {projectFiles.map((project: any) => (
           <ProjectTiles key={project.id} text={project.project} />
