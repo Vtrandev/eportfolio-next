@@ -5,8 +5,8 @@ export default function Skeleton({
   height,
   rounded,
 }: {
-  width: number;
-  height: number;
+  width: string | number;
+  height: string | number;
   rounded: string | number;
 }) {
   return (

@@ -13,33 +13,33 @@ function Landing() {
   }, []);
 
   return (
-    <div className="flex flex-col text-left">
+    <div className="flex flex-col outline h-[80vh] justify-center px-[16%]">
       {loading ? (
         <>
           <div>
-            <Skeleton width={450} height={96} rounded="10px" />
+            <Skeleton width={"70%"} height={96} rounded="10px" />
           </div>
 
           <div>
-            <Skeleton width={500} height={32} rounded="8px" />
+            <Skeleton width={"70%"} height={32} rounded="8px" />
           </div>
           <div>
-            <Skeleton width={537} height={80} rounded="8px" />
+            <Skeleton width={"70%"} height={80} rounded="8px" />
           </div>
         </>
       ) : (
         <>
-          <h1 className="text-4xl orange font-bold mb-3">Hi! My name is</h1>
-          <h1 className="text-8xl orange font-bold mb-6">Vuong Tran</h1>
-          <h2 className="text-2xl font-bold mb-6 text-white">
+          <h1 className="text-2xl md:text-4xl font-bold mb-3">Hi! My name is</h1>
+          <h1 className="text-4xl md:text-8xl orange font-bold mb-6">Vuong Tran</h1>
+          <h2 className="text-xl md:text-2xl font-bold mb-6 text-white">
             Frontend Software Engineer
           </h2>
           <div>
-            <p className="text-lg text-white">
+            <p className="text-md md:text-lg text-white mb-4">
               Driven, independent, life-long learner and <span className="orange">love</span> problem solving.
             </p>
           </div>
-          <div className="flex space-x-3 text-white">
+          <div className="flex space-x-6 text-white">
             <a href="https://www.linkedin.com/in/vuong-tran-ca" target="_blank">
               LinkedIn
             </a>

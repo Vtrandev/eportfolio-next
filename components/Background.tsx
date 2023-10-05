@@ -21,7 +21,7 @@ const Background = () => {
       <div
         style={{ top: location.y, left: location.x }}
         className={`-z-30 fixed w-[250px] h-[250px] circle bg-white rounded-full
-      opacity-5 blur-3xl`}
+      opacity-10 blur-3xl`}
       ></div>
       <div className="-z-40 fixed top-0 left-0 w-full h-full bg-[#131313]"></div>
       <div className="fixed top-0 left-0 w-full h-full background -z-20"></div>

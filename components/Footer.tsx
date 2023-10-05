@@ -5,7 +5,10 @@ import Link from "next/link";
 
 function Footer() {
   return (
-    <div id="footer" className="text-white flex flex-col items-center p-10">
+    <div
+      id="footer"
+      className="text-white flex flex-col items-center p-10 bg-[#252525]"
+    >
       <figure>
         <Image
           src={LogoImg}
