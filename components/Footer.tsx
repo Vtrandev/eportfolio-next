@@ -18,7 +18,7 @@ function Footer() {
           className="invert pb-5"
         /></a>
       </figure>
-      <div className="flex space-x-8">
+      <div className="flex flex-col items-center space-y-1 sm:flex-row sm:space-x-8">
         <Link href="https://github.com/Vtrandev" target="_blank">
           <p className="link__hover-effect link__hover-effect--white">
             Github

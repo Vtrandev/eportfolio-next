@@ -79,7 +79,7 @@ function Contact() {
   return (
     <div
       id="contact"
-      className="h-[600px] flex flex-col items-center justify-center"
+      className="h-[600px] flex flex-col items-center justify-center text-center"
     >
       <h2 className="text-3xl">Let's have a chat</h2>
       <p className="text-xl">I am currently open to new opportunities</p>
