@@ -8,17 +8,17 @@ function Form() {
   const form = useRef<any>();
   const [formSubmit, setFormSubmit] = useState<boolean>(false);
 
-  console.log(process.env.EMAILPUBLIC_ID);
+  // console.log(process.env.EMAILPUBLIC_ID);
 
   function sendEmail(event: any) {
     event.preventDefault();
 
     emailjs
       .sendForm(
-        process.env.EMAILSERVICE_ID,
-        process.env.EMAILTEMPLATE_ID,
+        "service_ql4kfzi",
+        "template_cuc1fdf",
         form.current,
-        process.env.EMAILPUBLIC_ID
+        "8nIg2t_rNO5VjyR2v"
       )
       .then((response: any) => {
         console.log("SUCCESS!", response.status, response.text);
