@@ -1,5 +1,4 @@
 "use client";
-import Link from "next/link";
 import React, { useEffect, useState } from "react";
 
 interface ProjectStack {
@@ -35,12 +34,12 @@ function Projects() {
           <h3 className="text-lg font-bold mb-2">{project}</h3>
           <p className="text-md font-semibold mb-2">{tech}</p>
           <p className="text-sm mb-4">{description}</p>
-          <span className="link">
-            <Link href={codeurl}>View the code</Link>
-          </span>
-          <span className="link">
-            <Link href={siteurl}>Visit site</Link>
-          </span>
+          <p className="link">
+            <a href={codeurl}>View the code</a>
+          </p>
+          <p className="link">
+            <a href={siteurl}>Visit site</a>
+          </p>
         </div>
       </div>
     );
