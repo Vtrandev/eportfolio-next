@@ -11,7 +11,7 @@ interface dataStack {
 function Techstack() {
   function TechTiles({ language, src }: dataStack) {
     return (
-      <div className="relative border-2 border-white border-solid h-[100px] flex justify-center items-center group">
+      <div className="relative h-[100px] flex justify-center items-center group">
         <img
           src={src}
           alt={`${language}`}
@@ -46,7 +46,7 @@ function Techstack() {
   return (
     <div
       id="techstack"
-      className="md:h-[700px] flex flex-col justify-center  mt-10 outline"
+      className="md:h-[700px] flex flex-col justify-center mt-20"
     >
       <h2 className="text-5xl mb-10 font-semibold">
         My Tech <span className="orange">Stack</span>

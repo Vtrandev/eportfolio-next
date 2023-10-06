@@ -4,16 +4,16 @@ import Skeleton from "@/components/skeleton";
 import React, { useEffect, useState } from "react";
 
 function Landing() {
-  const [loading, setLoading] = useState(true);
+  const [loading, setLoading] = useState(false);
 
-  useEffect(() => {
-    setTimeout(() => {
-      setLoading(false);
-    }, 500);
-  }, []);
+  // useEffect(() => {
+  //   setTimeout(() => {
+  //     setLoading(false);
+  //   }, 100);
+  // }, []);
 
   return (
-    <div className="h-[700px] flex flex-col outline justify-center px-[16%]">
+    <div className="h-[700px] flex flex-col justify-center px-[16%]">
       {loading ? (
         <>
           <div>

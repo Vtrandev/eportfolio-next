@@ -60,9 +60,9 @@ function Form() {
           <div>
             <button
               type="submit"
-              className="text-left font-semibold border my-2 py-2 px-4 rounded-lg link"
+              className="text-left font-semibold outline my-4 py-2 px-4 rounded-lg link"
             >
-              Submit
+              Send it!
             </button>
           </div>
         </form>
@@ -75,7 +75,7 @@ function Contact() {
   return (
     <div
       id="contact"
-      className="outline h-[600px] flex flex-col items-center justify-center"
+      className="h-[600px] flex flex-col items-center justify-center"
     >
       <h2 className="text-3xl">Let's have a chat</h2>
       <p className="text-xl">I am currently open to new opportunities</p>

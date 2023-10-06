@@ -4,7 +4,7 @@ function About() {
   return (
     <div
       id="about"
-      className="text-white outline flex flex-col items-center md:flex-row h-[600px] mt-10"
+      className="text-white flex flex-col items-center md:flex-row h-[600px] mt-10"
     >
       <div className="w-full md:w-[50%] p-5 flex flex-col justify-center">
         <h2 className="text-5xl mb-10 font-semibold">
@@ -26,14 +26,14 @@ function About() {
         </p>
       </div>
 
-      <figure className="relative h-full w-[80%] md:w-[50%] flex justify-center items-center outline overflow-hidden">
+      <figure className="relative h-full w-[70%] md:w-[50%] flex justify-center items-center overflow-hidden">
         <img
-          className="absolute p-6 md:p-[10%] rounded-[50%] z-10"
+          className="absolute p-10 md:p-[10%] rounded-[50%] z-10"
           src="./assets/VonTran124.jpg"
           alt="personal photo"
         />
         <img
-          className="absolute p-6 md:p-[10%] rounded-[50%] z-20 hover:opacity-0"
+          className="absolute p-10 md:p-[10%] rounded-[50%] z-20 hover:opacity-0"
           src="./assets/VonTran123.jpg"
           alt="personal photo"
         />
