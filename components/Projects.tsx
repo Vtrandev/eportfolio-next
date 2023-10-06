@@ -22,15 +22,29 @@ function Projects() {
     siteurl,
   }: ProjectStack) {
     return (
-      <div className="border-2 border-white border-solid h-[400px] relative flex justify-center items-center overflow-hidden">
-        <img className="w-[100%] opacity-50" src={src} alt={project} />
+      <div className="border-2 border-white border-solid h-[400px] relative flex justify-center items-center overflow-hidden rounded-lg group">
+        <img
+          className="h-[100%] object-cover group-hover:opacity-20 group-hover:blur-sm"
+          src={src}
+          alt={project}
+        />
+        
         {/* Hover overlay */}
-        <div className="absolute flex flex-col m-4">
+        <div className="absolute z-10 opacity-0 w-full h-full group-hover:bg-black group-hover:opacity-40"></div>
+        <div className="absolute z-20 flex-col m-4 flex opacity-0 transition-all duration-800 group-hover:opacity-100">
           <h3 className="text-lg font-bold mb-2">{project}</h3>
           <p className="text-md font-semibold mb-2">{tech}</p>
           <p className="text-sm mb-4">{description}</p>
-          <Link href={codeurl}>View the code</Link>
-          <Link href={siteurl}>Visit site</Link>
+          <Link href={codeurl}>
+            <span className="link">
+              View the code
+            </span>
+          </Link>
+          <Link href={siteurl}>
+            <span className="link">
+              Visit site
+            </span>
+          </Link>
         </div>
       </div>
     );
@@ -49,7 +63,9 @@ function Projects() {
 
   return (
     <div id="projects" className="outline">
-      <h2 className="text-5xl mt-10">My Projects</h2>
+      <h2 className="text-5xl font-semibold mt-10 mb-10">
+        My <span className="orange">Projects</span>
+      </h2>
       <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
         {projectFiles.map((project: any) => (
           <ProjectTiles

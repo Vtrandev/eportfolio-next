@@ -4,7 +4,7 @@ function About() {
   return (
     <div
       id="about"
-      className="text-white outline flex flex-col items-center md:flex-row h-[80vh]"
+      className="text-white outline flex flex-col items-center md:flex-row h-[600px] mt-10"
     >
       <div className="w-full md:w-[50%] p-5 flex flex-col justify-center">
         <h2 className="text-5xl mb-10 font-semibold">

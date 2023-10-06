@@ -10,7 +10,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
             codeurl: "https://github.com/Vtrandev/primesolutions",
             siteurl: "https://primesolutions.vercel.app/",
             tech: "Next.js, TailwindCSS",
-            description: "• Experience a real-world financing and loan landing page designed for lead generation using React Hook Form. • Enhanced performance with SEO optimization and responsiveness with a Mobile-first approach. • Continuous integration, continuous delivery, and continuous deployment techniques. • Developed with Next.js and Tailwind CSS, utilizing backend API fetches and integration with Google Sheets",
+            description: "Experience a real-world financing and loan landing page designed for lead generation using React Hook Form. Enhanced performance with SEO optimization and responsiveness with a Mobile-first approach. Continuous integration, continuous delivery, and continuous deployment techniques. Developed with Next.js and Tailwind CSS, utilizing backend API fetches and integration with Google Sheets",
         },
         {
             id: 1,
@@ -19,7 +19,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
             codeurl: "https://github.com/Vtrandev/promptagram",
             siteurl: "https://promptagram-kappa.vercel.app/",
             tech: "Next.js, TailwindCSS, MongoDB",
-            description: "Full stack web application built with Next.js 13, TailwindCSS and using MongoDB as a backend database. • Sign-in authentication implemented with Google Sign-in and optional Guest login. • Able to create and post, edit, and share prompts, along with user profile pages and search functionality.",
+            description: "Full stack web application built with Next.js 13, TailwindCSS and using MongoDB as a backend database. Sign-in authentication implemented with Google Sign-in and optional Guest login. Able to create and post, edit, and share prompts, along with user profile pages and search functionality.",
         },
         {
             id: 2,
@@ -28,7 +28,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
             codeurl: "https://github.com/Vtrandev/vuong-internship",
             siteurl: "https://vuong-internship.vercel.app/",
             tech: "React.js, HTML, CSS, JavaScript",
-            description: "Transformed a single page application into an interactive user interface using animations, transitions, and carousels. • Processed API requests with Axios, dynamic routing, fully responsive, and skeleton loading states. • Built with best practices in mind using React.js, JavaScript, CSS, and HTML.",
+            description: "Transformed a single page application into an interactive user interface using animations, transitions, and carousels. Processed API requests with Axios, dynamic routing, fully responsive, and skeleton loading states. Built with best practices in mind using React.js, JavaScript, CSS, and HTML.",
         },
         {
             id: 3,

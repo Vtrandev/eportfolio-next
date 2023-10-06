@@ -46,12 +46,12 @@ function Techstack() {
   return (
     <div
       id="techstack"
-      className="md:h-[700px] flex flex-col justify-center outline"
+      className="md:h-[700px] flex flex-col justify-center  mt-10 outline"
     >
       <h2 className="text-5xl mb-10 font-semibold">
         My Tech <span className="orange">Stack</span>
       </h2>
-      <p className="w-[100%] md:w-[70%] font-semibold mb-5">
+      <p className="w-[100%] md:w-[70%] font-medium mb-5">
         My main area of expertise is front end development (client side of the web) but also have backend experience.
         <br />
         <br />

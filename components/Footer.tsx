@@ -18,21 +18,29 @@ function Footer() {
           className="invert pb-5"
         />
       </figure>
-      <div className="grid grid-cols-4 gap-10">
+      <div className="flex space-x-5">
         <Link href="https://github.com/Vtrandev" target="_blank">
-          <p className="text-center border">Github</p>
+          <p className="border link__hover-effect link__hover-effect--white">
+            Github
+          </p>
         </Link>
         <Link href="https://www.linkedin.com/in/vuong-tran-ca/" target="_blank">
-          <p className="text-center border">LinkedIn</p>
+          <p className="border link__hover-effect link__hover-effect--white">
+            LinkedIn
+          </p>
         </Link>
         <Link href="#contact">
-          <p className="text-center border">Contact</p>
+          <p className="border link__hover-effect link__hover-effect--white">
+            Contact
+          </p>
         </Link>
         <Link
           href="https://drive.google.com/file/d/173WDjRDoyn_ahqr383_wVCrgsi2Wxm3H/view"
           target="_blank"
         >
-          <p className="text-center border">Resume</p>
+          <p className="border link__hover-effect link__hover-effect--white">
+            Resume
+          </p>
         </Link>
       </div>
     </div>
