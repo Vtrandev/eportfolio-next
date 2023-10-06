@@ -34,11 +34,15 @@ function Projects() {
           <h3 className="text-lg font-bold mb-2">{project}</h3>
           <p className="text-md font-semibold mb-2">{tech}</p>
           <p className="text-sm mb-4">{description}</p>
-          <p className="link">
-            <a href={codeurl}>View the code</a>
+          <p>
+            <a href={codeurl} className="link">
+              View the code
+            </a>
           </p>
-          <p className="link">
-            <a href={siteurl}>Visit site</a>
+          <p>
+            <a href={siteurl} className="link">
+              Visit site
+            </a>
           </p>
         </div>
       </div>
