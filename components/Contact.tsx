@@ -2,23 +2,19 @@
 import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 
-import "dotenv/config";
-
 function Form() {
   const form = useRef<any>();
   const [formSubmit, setFormSubmit] = useState<boolean>(false);
-
-  // console.log(process.env.EMAILPUBLIC_ID);
 
   function sendEmail(event: any) {
     event.preventDefault();
 
     emailjs
       .sendForm(
-        "service_ql4kfzi",
-        "template_cuc1fdf",
+        process.env.NEXT_PUBLIC_EMAILSERVICE_ID,
+        process.env.NEXT_PUBLIC_EMAILTEMPLATE_ID,
         form.current,
-        "8nIg2t_rNO5VjyR2v"
+        process.env.NEXT_PUBLIC_EMAILPUBLIC_ID
       )
       .then((response: any) => {
         console.log("SUCCESS!", response.status, response.text);
