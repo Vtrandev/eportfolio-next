@@ -21,7 +21,7 @@ function Projects() {
     siteurl,
   }: ProjectStack) {
     return (
-      <div className="border-4 h-[400px] relative flex justify-center items-center overflow-hidden rounded-lg group hover:shadow-2xl hover:shadow-white">
+      <div className="border-4 h-[400px] relative flex justify-center items-center overflow-hidden rounded-lg group hover:shadow-xl hover:shadow-white/30">
         <img
           className="h-[100%] object-cover group-hover:opacity-20 group-hover:blur-sm"
           src={src}
