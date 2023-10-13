@@ -6,7 +6,7 @@ import Burgermenu from "./Burgermenu";
 function Navbar() {
 
   return (
-    <div className="flex items-center justify-between h-[80px] mx-[20px] text-white">
+    <div className="flex fixed left-0 right-0 z-10 items-center justify-between h-[80px] mx-[20px] text-white">
       <figure>
         <Image
           src={LogoImg}

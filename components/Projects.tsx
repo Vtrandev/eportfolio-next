@@ -21,7 +21,7 @@ function Projects() {
     siteurl,
   }: ProjectStack) {
     return (
-      <div className="border-2 drop-shadow-md h-[400px] relative flex justify-center items-center overflow-hidden rounded-lg group">
+      <div className="border-4 h-[400px] relative flex justify-center items-center overflow-hidden rounded-lg group hover:shadow-2xl hover:shadow-white">
         <img
           className="h-[100%] object-cover group-hover:opacity-20 group-hover:blur-sm"
           src={src}
@@ -45,6 +45,8 @@ function Projects() {
             </a>
           </p>
         </div>
+
+
       </div>
     );
   }
@@ -65,7 +67,7 @@ function Projects() {
       <h2 className="text-5xl font-semibold mt-20 mb-10">
         My <span className="orange">Projects</span>
       </h2>
-      <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
+      <div className="grid grid-cols-1 gap-10 md:grid-cols-2">
         {projectFiles.map((project: any) => (
           <ProjectTiles
             key={project.id}
