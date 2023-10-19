@@ -7,7 +7,7 @@ function About() {
       className="text-white flex flex-col items-center md:flex-row h-[600px] mt-10"
     >
       <div className="w-full md:w-[50%] p-5 flex flex-col justify-center">
-        <h2 className="text-5xl mb-10 font-semibold">
+        <h2 className="headings">
           About <span className="orange">Me</span>
         </h2>
         <p className="mb-4">

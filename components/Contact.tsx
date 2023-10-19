@@ -77,8 +77,8 @@ function Contact() {
       id="contact"
       className="h-[600px] flex flex-col items-center justify-center text-center"
     >
-      <h2 className="text-3xl">Let's have a chat</h2>
-      <p className="text-xl">I am currently open to new opportunities</p>
+      <h2 className="text-2xl md:text-3xl">Let's have a chat</h2>
+      <p className="text-lg md:text-xl">I am currently open to new opportunities</p>
       <Form />
     </div>
   );

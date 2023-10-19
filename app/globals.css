@@ -12,6 +12,10 @@ html {
   scroll-behavior: smooth;
 }
 
+.headings {
+  @apply text-3xl md:text-5xl mb-10 font-semibold
+}
+
 .background {
   background: url("../public/assets/Bgtile.png");
   background-repeat: repeat;

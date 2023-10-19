@@ -64,7 +64,7 @@ function Projects() {
 
   return (
     <div id="projects">
-      <h2 className="text-5xl font-semibold mt-20 mb-10">
+      <h2 className="headings mt-20">
         My <span className="orange">Projects</span>
       </h2>
       <div className="grid grid-cols-1 gap-10 md:grid-cols-2">

@@ -48,7 +48,7 @@ function Techstack() {
       id="techstack"
       className="md:h-[700px] flex flex-col justify-center mt-20"
     >
-      <h2 className="text-5xl mb-10 font-semibold">
+      <h2 className="headings">
         My Tech <span className="orange">Stack</span>
       </h2>
       <p className="w-[100%] md:w-[70%] font-medium mb-5">
