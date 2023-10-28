@@ -28,12 +28,12 @@ function About() {
 
       <figure className="relative h-full w-[70%] md:w-[50%] flex justify-center items-center overflow-hidden">
         <img
-          className="absolute p-10 md:p-[10%] rounded-[50%] z-10"
+          className="absolute p-10 md:p-[10%] rounded-[50%] -z-10"
           src="./assets/VonTran124.jpg"
           alt="personal photo"
         />
         <img
-          className="absolute p-10 md:p-[10%] rounded-[50%] z-20 hover:opacity-0"
+          className="absolute p-10 md:p-[10%] rounded-[50%] z-[0] hover:opacity-0"
           src="./assets/VonTran123.jpg"
           alt="personal photo"
         />

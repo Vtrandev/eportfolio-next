@@ -52,7 +52,7 @@ function Landing() {
             </p>
           </div>
           <p className="text-md text-white">View more about me here</p>
-          <div className="flex space-x-8">
+          <div className="flex flex-col sm:flex-row sm:space-x-8">
             <a href="https://www.linkedin.com/in/vuong-tran-ca" target="_blank">
               <span className="link">LinkedIn</span>
             </a>

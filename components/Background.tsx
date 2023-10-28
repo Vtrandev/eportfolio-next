@@ -27,7 +27,7 @@ const Background = () => {
       <div className="-z-40 fixed top-0 left-0 w-full h-full bg-[#131313]"></div>
       <div className="fixed top-0 left-0 w-full h-full background -z-20"></div>
 
-      <figure className="fixed z-60 w-10 h-10 bottom-14 left-10">
+      <figure className="fixed z-10 w-10 h-10 bottom-14 left-10">
         <a href="https://github.com/Vtrandev" target="_blank">
           <img
             className="w-full"
@@ -37,7 +37,7 @@ const Background = () => {
         </a>
       </figure>
 
-      <span className="fixed z-30 bottom-12 right-10 text-white group">
+      <span className="fixed z-10 bottom-12 right-10 text-white group">
         <a href="#">
           Back to Top{" "}
           <ChevronDoubleUpIcon className="w-5 inline-block group-hover:animate-[bounce_1s_linear_infinite]" />
