@@ -29,8 +29,8 @@ function Projects() {
         />
 
         {/* Hover overlay */}
-        <div className="absolute z-10 opacity-0 w-full h-full group-hover:bg-black group-hover:opacity-40"></div>
-        <div className="absolute z-20 flex-col m-4 flex opacity-0 transition-all duration-800 group-hover:opacity-100">
+        <div className="absolute z-[1] opacity-0 w-full h-full group-hover:bg-black group-hover:opacity-40"></div>
+        <div className="absolute z-[2] flex-col m-4 opacity-0 transition-all duration-800 group-hover:opacity-100">
           <h3 className="text-lg font-bold mb-2">{project}</h3>
           <p className="text-md font-semibold mb-2">{tech}</p>
           <p className="text-sm mb-4">{description}</p>
